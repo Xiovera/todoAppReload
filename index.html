@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+  	<title>Todo APP</title>
+  	<!--Bootstrap-->	
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+	<!--Css-->
+  	<link rel="stylesheet" href="css/animate.css" type="text/css">  	
+  	<link rel="stylesheet" href="css/queries.css" type="text/css">
+  	 <link rel="stylesheet" href="css/main.css" type="text/css">
+  	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<!--Fonts-->
+  	<link rel="shortcut icon" href="favicon.ico">
+  	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">  
+</head>
+<body>
+	<header>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12 col-sm-12 col-xs-12">
+				<h3 class="text-center well well-sm">TODO APP</h3>
+			</div>
+		</div>
+	</div>
+	</header>
+	<section class="principal">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12 col-sm-12 col-xs-12">
+				<textarea id="task" class="form-control" rows="4" placeholder="Añade tu nueva tarea"></textarea>
+				<br>
+				<button type="submit" class="btn btn-primary" id="add" onclick="drawTasksList()"><i class="fa fa-plus" aria-hidden="true"></i>   Añadir tarea</button>
+			</div>
+		</div>
+	</div>	
+	<br>
+	</section>
+	<section class="task">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12" id="listTask">
+					<ul id="lista">
+							
+					</ul>
+				</div>
+			</div>
+		</div>		
+	</section>
+<!--Script-->
+  	<script src="js/main2.js"></script>
+</body>
+</html>
